@@ -5,6 +5,7 @@ const CartRouter = require("./routes/Cart")
 const OrderRouter = require("./routes/Order")
 const VendorNotification = require("./routes/VendorNotification")
 const VendorAssign = require("./routes/VendorAssign")
+const deliver = require("./routes/Deliver")
 
 const app = express() ; 
 
@@ -18,6 +19,7 @@ app.use("/api/cart" , CartRouter)
 app.use("/api/order" , OrderRouter)
 app.use("/api/notification" , VendorNotification)
 app.use("/api/assign" , VendorAssign)
+app.use("/api/deliver" , deliver)
 
 
 
